@@ -16,13 +16,13 @@ No Outputs
 
 ## Example usage
 ```
-uses: m3y/rust-just@v1
+uses: m3y/rust-just-action@v1
 with:
   command: test
 ```
 or
 ```
-uses: m3y/rust-just@v1
+uses: m3y/rust-just-action@v1
 with:
   command: test
   file: /path/to/justfile
