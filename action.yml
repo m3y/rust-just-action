@@ -1,0 +1,20 @@
+name: 'rust-just'
+author: 'm3y <ma3ya.ozw+github@gmail.com>'
+description: 'Using just in rust application'
+branding:
+  icon: 'file-text'
+  color: 'green'
+inputs:
+  command:
+    description: 'just RECIPE'
+    required: true
+  file:
+    description: 'justfile path '
+    required: false
+    default: './justfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
+    - ${{ inputs.file }}
